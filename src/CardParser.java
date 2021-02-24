@@ -7,10 +7,10 @@ public class CardParser
 {
 	private String urlString;
 	private ArrayList<HeartstoneCard> theMinions;
+	private JSONArray obj;
 	
 	public CardParser(String urlString)
 	{
-		//initial fields
 		this.urlString = urlString;
 		theMinions = new ArrayList< HeartstoneCard >();
 		
@@ -54,6 +54,20 @@ public class CardParser
 	
 	public void sortLowestCostToHighestCost()
 	{
+		if(obj instanceof JSONArray)
+		{
+			JSONArray array = (JSONArray)obj;
+			for(int d = 0; d < 5; d++)
+			{
+				for(int i = 0; i < this.theMinions.size(); i++)
+		{	
+	JSONObject cardData = (JSONObject)array.get(i);
+	if(cardData.containsKey("cost")&&cardData.get("cost").equals(d))
+	{
 		
+	}
+		}
+			}
+		}
 	}
 }

@@ -13,6 +13,17 @@ public class HeartstoneCard
 		this.defense = defense;
 		this.name = name;
 	}
+	public int getCost()
+	{
+		return this.cost;
+	}
+	public void setName(String name)
+	{
+		if(name.length() >= 5)
+		{
+			this.name = name;
+		}
+	}
 	
 	void display()
 	{

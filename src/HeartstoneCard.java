@@ -18,7 +18,6 @@ public class HeartstoneCard
 	{
 		System.out.println("Name: " + this.name + "\nCost: " + this.cost + "\nAttack:" + this.attack + " Defense: " + this.defense);
 		System.out.format("Name: %s \n Cost: %d \n Attack: %d Defense: %d\n", this.name, this.cost, this.attack, this.defense);
-		
 	}
 }
 
